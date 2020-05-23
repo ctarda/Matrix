@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		D882E8932478DB0D0020BB37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D882E8922478DB0D0020BB37 /* Preview Assets.xcassets */; };
 		D882E8962478DB0D0020BB37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D882E8942478DB0D0020BB37 /* LaunchScreen.storyboard */; };
 		D882E8A12478DB0D0020BB37 /* MatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D882E8A02478DB0D0020BB37 /* MatrixTests.swift */; };
+		D882E8AD2478DBED0020BB37 /* MatrixClient in Frameworks */ = {isa = PBXBuildFile; productRef = D882E8AC2478DBED0020BB37 /* MatrixClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D882E8AD2478DBED0020BB37 /* MatrixClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +125,9 @@
 			dependencies = (
 			);
 			name = Matrix;
+			packageProductDependencies = (
+				D882E8AC2478DBED0020BB37 /* MatrixClient */,
+			);
 			productName = Matrix;
 			productReference = D882E8862478DB0B0020BB37 /* Matrix.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +178,9 @@
 				Base,
 			);
 			mainGroup = D882E87D2478DB0B0020BB37;
+			packageReferences = (
+				D882E8AB2478DBED0020BB37 /* XCRemoteSwiftPackageReference "MatrixClient" */,
+			);
 			productRefGroup = D882E8872478DB0B0020BB37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -469,6 +477,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D882E8AB2478DBED0020BB37 /* XCRemoteSwiftPackageReference "MatrixClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ctarda/MatrixClient.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D882E8AC2478DBED0020BB37 /* MatrixClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D882E8AB2478DBED0020BB37 /* XCRemoteSwiftPackageReference "MatrixClient" */;
+			productName = MatrixClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D882E87E2478DB0B0020BB37 /* Project object */;
 }

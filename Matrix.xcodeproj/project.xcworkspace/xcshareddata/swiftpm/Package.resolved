@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MatrixClient",
+        "repositoryURL": "https://github.com/ctarda/MatrixClient.git",
+        "state": {
+          "branch": "master",
+          "revision": "49a6acbb107f44a025cece5ba88ab7f17121f6d0",
+          "version": null
+        }
+      },
+      {
+        "package": "NetworkDispatcher",
+        "repositoryURL": "https://github.com/ctarda/NetworkDispatcher.git",
+        "state": {
+          "branch": null,
+          "revision": "ac57ae0004f5a4db46eda05eb80d4488c95b02dc",
+          "version": "0.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
