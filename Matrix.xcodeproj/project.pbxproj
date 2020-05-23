@@ -14,7 +14,8 @@
 		D882E8932478DB0D0020BB37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D882E8922478DB0D0020BB37 /* Preview Assets.xcassets */; };
 		D882E8962478DB0D0020BB37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D882E8942478DB0D0020BB37 /* LaunchScreen.storyboard */; };
 		D882E8A12478DB0D0020BB37 /* MatrixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D882E8A02478DB0D0020BB37 /* MatrixTests.swift */; };
-		D882E8AD2478DBED0020BB37 /* MatrixClient in Frameworks */ = {isa = PBXBuildFile; productRef = D882E8AC2478DBED0020BB37 /* MatrixClient */; };
+		D882E8AF2478DCE30020BB37 /* RoomsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D882E8AE2478DCE30020BB37 /* RoomsViewModel.swift */; };
+		D882E8B42478DEB10020BB37 /* MatrixClient in Frameworks */ = {isa = PBXBuildFile; productRef = D882E8B32478DEB10020BB37 /* MatrixClient */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		D882E89C2478DB0D0020BB37 /* MatrixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D882E8A02478DB0D0020BB37 /* MatrixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixTests.swift; sourceTree = "<group>"; };
 		D882E8A22478DB0D0020BB37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D882E8AE2478DCE30020BB37 /* RoomsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D882E8AD2478DBED0020BB37 /* MatrixClient in Frameworks */,
+				D882E8B42478DEB10020BB37 /* MatrixClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +90,7 @@
 				D882E8942478DB0D0020BB37 /* LaunchScreen.storyboard */,
 				D882E8972478DB0D0020BB37 /* Info.plist */,
 				D882E8912478DB0D0020BB37 /* Preview Content */,
+				D882E8AE2478DCE30020BB37 /* RoomsViewModel.swift */,
 			);
 			path = Matrix;
 			sourceTree = "<group>";
@@ -126,7 +129,7 @@
 			);
 			name = Matrix;
 			packageProductDependencies = (
-				D882E8AC2478DBED0020BB37 /* MatrixClient */,
+				D882E8B32478DEB10020BB37 /* MatrixClient */,
 			);
 			productName = Matrix;
 			productReference = D882E8862478DB0B0020BB37 /* Matrix.app */;
@@ -179,7 +182,7 @@
 			);
 			mainGroup = D882E87D2478DB0B0020BB37;
 			packageReferences = (
-				D882E8AB2478DBED0020BB37 /* XCRemoteSwiftPackageReference "MatrixClient" */,
+				D882E8B22478DEB10020BB37 /* XCRemoteSwiftPackageReference "MatrixClient" */,
 			);
 			productRefGroup = D882E8872478DB0B0020BB37 /* Products */;
 			projectDirPath = "";
@@ -219,6 +222,7 @@
 				D882E88A2478DB0B0020BB37 /* AppDelegate.swift in Sources */,
 				D882E88C2478DB0B0020BB37 /* SceneDelegate.swift in Sources */,
 				D882E88E2478DB0B0020BB37 /* ContentView.swift in Sources */,
+				D882E8AF2478DCE30020BB37 /* RoomsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,20 +483,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D882E8AB2478DBED0020BB37 /* XCRemoteSwiftPackageReference "MatrixClient" */ = {
+		D882E8B22478DEB10020BB37 /* XCRemoteSwiftPackageReference "MatrixClient" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ctarda/MatrixClient.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = exactVersion;
+				version = 0.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D882E8AC2478DBED0020BB37 /* MatrixClient */ = {
+		D882E8B32478DEB10020BB37 /* MatrixClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D882E8AB2478DBED0020BB37 /* XCRemoteSwiftPackageReference "MatrixClient" */;
+			package = D882E8B22478DEB10020BB37 /* XCRemoteSwiftPackageReference "MatrixClient" */;
 			productName = MatrixClient;
 		};
 /* End XCSwiftPackageProductDependency section */

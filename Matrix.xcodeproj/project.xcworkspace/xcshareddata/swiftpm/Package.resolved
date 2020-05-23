@@ -5,9 +5,9 @@
         "package": "MatrixClient",
         "repositoryURL": "https://github.com/ctarda/MatrixClient.git",
         "state": {
-          "branch": "master",
-          "revision": "49a6acbb107f44a025cece5ba88ab7f17121f6d0",
-          "version": null
+          "branch": null,
+          "revision": "adff3ebb25fc78eb93461e46d8053a16a35efa1b",
+          "version": "0.0.3"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/ctarda/NetworkDispatcher.git",
         "state": {
           "branch": null,
-          "revision": "ac57ae0004f5a4db46eda05eb80d4488c95b02dc",
-          "version": "0.0.4"
+          "revision": "4e0fe8d68d2203ad37cb7dc19fb5c92e8db6afbf",
+          "version": "0.0.5"
         }
       }
     ]
